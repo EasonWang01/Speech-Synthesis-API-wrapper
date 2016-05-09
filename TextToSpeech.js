@@ -23,7 +23,7 @@ if ('speechSynthesis' in window) {
      		console.error("text must be a string at first argument")
      		return
      	};
-if (typeof voice !== 'undefined'){
+    if (typeof voice !== 'undefined'){
 		if(typeof voice=="number"){
 			if(0<=voice&&voice<=19){
 		      msg.voice = voices[voice];
@@ -33,8 +33,8 @@ if (typeof voice !== 'undefined'){
 	    }else{
 	    	console.error("voice must be number at second argument")
 	    }
-}	    
-if (typeof volume !== 'undefined'){
+    }	    
+    if (typeof volume !== 'undefined'){
      	if(typeof volume=="number"){
 
      		if(0<=volume&&volume<=1){
@@ -74,22 +74,23 @@ if (typeof volume !== 'undefined'){
      		return
      	};
     } 	    
-if (typeof showElapsedTime !== 'undefined'){
+    if (typeof showElapsedTime !== 'undefined'){
 	if(typeof showElapsedTime=="boolean"){
 		 if(showElapsedTime==true){
 		 	msg.onend = function(e) {
 			  console.log('Finished in ' + event.elapsedTime + ' seconds.');
 			};
 		}
-    }else{
-    	console.error("showElapsedTime must be true of false at sixth argument")
-    }
+        }else{
+    	    console.error("showElapsedTime must be true of false at sixth argument")
+        }
 
-}
+    }
     
      	speechSynthesis.speak(msg);
   }
 
 
+	
 }
 
