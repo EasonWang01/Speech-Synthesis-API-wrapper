@@ -20,5 +20,16 @@ CDN
 
 #API
 ```
+/*
+* @param {string} text     
+* @param {number} voice        0~19
+* @param {number} volume       0~1
+* @param {number} rate         0.1~2 
+* @param {number} pitch        0~2
+* @param {boolean} showElapsedTime
+*/
+
+
+
 TextToSpeech(text,voice,volume,rate,pitch,showElapsedTime);
 ```
