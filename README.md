@@ -1,2 +1,11 @@
 # Speech-Synthesis-API-wrapper
-wrap Speech Synthesis API with a function
+
+
+#How to use?
+```
+<script src="https://raw.githubusercontent.com/EasonWang01/Speech-Synthesis-API-wrapper/master/TextToSpeech.js"></script>
+```
+
+```
+TextToSpeech(text,voice,volume,rate,pitch,showElapsedTime);
+```
